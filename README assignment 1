@@ -5,5 +5,5 @@ Data types:
 Date and time: a unique data type which contains the exact date and time (in UTC +0) when a Tweet was created.
 September date: an int containing a 2-digit number signifying the day in September which the associated Tweet was created. Note that all data goes back 1 week.
 ID: aan int of a unique ID of each tweet. Note that each cell in Excel shows up in scientific notation, but is unique when individually clicked on.
-COntext annotations: an array containing many different identifiers of each tweet. These include domain, id, and a description of the topic.
+Context annotations: an array containing many different identifiers of each tweet. These include domain, id, and a description of the topic.
 Known issues: data only goes back one week, limiting the data to about 130 Tweets in that time frame.
