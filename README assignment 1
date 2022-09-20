@@ -1,4 +1,7 @@
 Goal: THe goal of this project was to learn how to take tweets from Twitter, and turn them into some sort of informative visual representation. 
+Analysis: The data I dend up analyzing was Tweets from the Dallas Cowboys. In my visualization, I recorded how many Tweets the official @dallascowboys account made on each day in the last week.
+cont. I found that they Tweeted much more on SUnday, 9/18 and Monday, 9/19 than the other days. I believe that this is because they played, and won, their game on Sunday. These are both reasons for a sports team to be cative on social media. 
+(I have anecdotally observed the teams I follow post much less on their socials after defeats.)
 API links: https://docs.google.com/document/d/1quv7nZKSM3L6J28sVsBaraZVK0BPj0LuRnaSQVp_rhI/edit
 The above link is viewable with a UTmail account.
 Data types: 
