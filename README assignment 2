@@ -1,0 +1,29 @@
+I am testing for the label 'toxic.' I created an assortment of comments, some of which I judged to be toxic. THe included various forms of toxic language and tones.
+
+Hypothesis:
+
+Hypothesis: I believe that the Perspective API scores comments based on how often they contain certain words and phrases.
+I think that these words/phrases, even when employed in a clearly not-toxic manner, will bump up a comment's score. 
+I think that if the highest scores are achieved by comments with several words, but also with a more frequent use of the score-increasing words. 
+I imagine that more commonly used insults are likely to score higher than less common counterparts which mean the same think, when used in the same context.
+
+Analysis:
+
+With my threshold of 0.58, I found a couple of false postitves- the comments that began with "Bro thats f-" and "No. Respectfully." 
+I intentionally made these comments include swear words even though they had a positive tone.
+I found false a negative in the comment that began with "y cant u accept-."
+Despite a few errors, I found the Perspective API to be pretty accurate. Since I created the test set myself, I already imagined a level of toxicity for each comment before it was scored.
+In the model scores, it seemed that the mid-range of comments contained the longer toxic comments. I imagine that these comments got their scores because the score-increasing swears
+were diluted by the volume of the comment. Corroborating this is the presence of 1 sentence comments in the top scoring range.
+In some of my original queries, in which I was just testing the API, I found that no combination of english words could get a score as low as those in different languages and alphabets.
+
+Results: 
+
+I have learned that this model largely determines its score from specific words, particularly swears, and, to a lesser extent, other insults, such as "imbecile."
+Impressively, I found that the comment can account for workarounds such as replacing letters with numbers. My last comment was "you 5h!the4d," and this was still
+above my threshold at 0.67. Of course, this function was not perfect, as I tested "ypu shithead" and got a much higher 0.87.
+Something that surprised me in my findings was how the length of a comment affected the score. My longest comment (beginning with "Look here kid,") got the exact same score as
+the comment "you dunce" at 0.5958.. These 2 comments are clealry very different from each other in size and content, but of course have a similar negative tone. 
+Still, it is interesting to see how the algorithm came to the same point on such contrasting comments.
+I believe that longer comments lower their scores by the simple volume of words. Unless the comment is a repitition of the same insult, long comments simply have too many words
+in the way of the parts of the comment that count, which results in a lower toxicity score than a simple "f--- you."
